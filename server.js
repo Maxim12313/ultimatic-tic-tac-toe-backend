@@ -17,6 +17,10 @@ const io = new Server(server, {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("<h1>ultimate tic tac toe socket.io backend</h1>");
+});
+
 let queue = [];
 
 io.on("connection", (socket) => {
