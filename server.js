@@ -7,7 +7,7 @@ const app = express();
 const server = createServer(app); 
 
 const development = "http://localhost:3000";
-const production = "https://ultimate-tic-tac-toe-git-main-maxims-projects-cd9423de.vercel.app";
+const production = "https://ultimate-tic-tac-toe-gamma.vercel.app";
 const frontEnd = process.env.NODE_ENV == "development" ? development : production;
 
 const io = new Server(server, { 
